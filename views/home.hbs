@@ -1,0 +1,101 @@
+<section class="hero" data-animate="hero">
+  <div class="hero__content">
+    <p class="hero__eyebrow">Home Melbourne Pty Ltd</p>
+    <h1>Wholesale steel systems finished in white, orange, and brown.</h1>
+    <p class="hero__lead">
+      Coolroom Pannel, Steel Beam, Fencing, and Gate solutions delivered together so your project opens with a unified
+      Home Melbourne palette.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="/catalog">View catalog</a>
+      <a class="btn btn--ghost" href="/contact">Talk to sales</a>
+    </div>
+  </div>
+</section>
+
+<section class="marquee" aria-label="Key service highlights">
+  <div class="marquee__inner">
+    {{#each marqueeMessages}}
+      <span>{{this}}</span>
+    {{/each}}
+    {{#each marqueeMessages}}
+      <span aria-hidden="true">{{this}}</span>
+    {{/each}}
+  </div>
+</section>
+
+<section class="product-showcase" data-animate="fade">
+  <div class="product-stack">
+    {{#each heroProducts}}
+      <article class="product-card" data-animate="zoom">
+        <div class="product-card__image">
+          <img src="{{this.image}}" alt="{{this.name}} display" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <h2>{{this.name}}</h2>
+          <p>{{this.description}}</p>
+        </div>
+      </article>
+    {{/each}}
+  </div>
+</section>
+
+<section class="panels">
+  <div class="panel panel--coolroom" data-animate="zoom">
+    <div class="panel__copy">
+      <span class="panel__label">Coolroom Pannel</span>
+      <h3>Temperature confidence in bright white</h3>
+      <p>
+        Food-safe skins, sealed junctions, and durable cores keep cold storage consistent from commissioning to handover.
+      </p>
+    </div>
+  </div>
+  <div class="panel panel--steelbeam" data-animate="zoom">
+    <div class="panel__copy">
+      <span class="panel__label">Steel Beam</span>
+      <h3>Steel backbone with warm oxide tones</h3>
+      <p>
+        From universal beams to custom welded sections, we fabricate to schedule with mill-certified traceability.
+      </p>
+    </div>
+  </div>
+  <div class="panel panel--fencing" data-animate="zoom">
+    <div class="panel__copy">
+      <span class="panel__label">Fencing</span>
+      <h3>Perimeter solutions with signature orange</h3>
+      <p>
+        Modular panels, custom heights, and resilient coatings deliver architectural impact with reliable security.
+      </p>
+    </div>
+  </div>
+  <div class="panel panel--gate" data-animate="zoom">
+    <div class="panel__copy">
+      <span class="panel__label">Gate</span>
+      <h3>Gate assemblies finished to match</h3>
+      <p>
+        Sliding, swing, and cantilever gate systems arrive automation-ready with precision-aligned hardware.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="pillars" data-animate="fade">
+  <h2>Why construction leaders choose {{companyName}}</h2>
+  <div class="pillars__grid">
+    {{#each valuePillars}}
+      <article class="pillar">
+        <h3>{{this.title}}</h3>
+        <p>{{this.copy}}</p>
+      </article>
+    {{/each}}
+  </div>
+</section>
+
+<section class="cta" data-animate="fade">
+  <h2>Ready to source cohesive steel solutions?</h2>
+  <p>Secure insulated panels, structural steel, perimeter systems, and gates through a single wholesale partner.</p>
+  <div class="cta__actions">
+    <a class="btn btn--primary" href="/accounts">Create a wholesale account</a>
+    <a class="btn btn--ghost" href="/contact">Schedule a consultation</a>
+  </div>
+</section>
