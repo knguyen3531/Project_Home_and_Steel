@@ -24,15 +24,17 @@
   </div>
 </section>
 
-<section class="product-showcase" data-animate="fade">
-  <div class="product-stack">
+<section class="product-story" aria-label="Product storytelling showcase">
+  <div class="product-story__inner">
     {{#each heroProducts}}
-      <article class="product-card" data-animate="zoom">
-        <div class="product-card__image">
-          <img src="{{this.image}}" alt="{{this.name}} display" loading="lazy" />
+      <article class="story-frame" data-scrolly>
+        <div class="story-frame__media">
+          <img src="{{this.image}}" alt="{{this.name}} showcase imagery" loading="lazy" />
+          <div class="story-frame__scrim"></div>
         </div>
-        <div class="product-card__body">
-          <h2>{{this.name}}</h2>
+        <div class="story-frame__content">
+          <span class="story-frame__badge">{{this.name}}</span>
+          <h2>{{this.headline}}</h2>
           <p>{{this.description}}</p>
         </div>
       </article>

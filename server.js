@@ -29,21 +29,25 @@ app.get('/', (_req, res) => {
     heroProducts: [
       {
         name: 'Coolroom Pannel',
+        headline: 'Temperature confidence in bright white',
         description: 'Food-grade insulated panels with crisp white finishes and fast-locking seams for cold storage builds.',
         image: '/images/coolroom.jpg'
       },
       {
         name: 'Steel Beam',
+        headline: 'Steel backbone with warm oxide tones',
         description: 'Structural beams fabricated to specification with protective brown oxide primers ready for site.',
         image: '/images/steel-beam.jpg'
       },
       {
         name: 'Fencing',
+        headline: 'Perimeter solutions with signature orange',
         description: 'Modular fencing runs that balance privacy, airflow, and the signature Home Melbourne orange line.',
         image: '/images/fencing.jpg'
       },
       {
         name: 'Gate',
+        headline: 'Gate assemblies finished to match',
         description: 'Swing and sliding gate systems supplied automation-ready with matching finishes to your fencing.',
         image: '/images/gate.jpg'
       }
